@@ -46,4 +46,10 @@
 
 #### 5] Writing first Python code
 - [x] In shell running problem is `no memory` or there is no store way of keeping the files.
+- [x] Test python
+```bash
+python testpython.py
+3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+```
+
 
