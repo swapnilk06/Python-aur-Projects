@@ -52,4 +52,13 @@ python testpython.py
 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
 ```
 
+<br>
+
+
+#### 6] Get everything in Virtual Environment
+- [x] Story behind Virtual Environment
+	- Its like **safeguarding your application from other versions & don't clutter your operating system.
+	- Program actually moves safely in other environment as well on Linux, on Mac or other computer.
+	- For every application create standalone Python Environment.
+	
 
