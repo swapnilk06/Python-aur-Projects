@@ -1,5 +1,5 @@
 # Function => just wrap instruction in a box
-
+'''
 def make_chai():  # that is also function
     if not kettle_has_water():
         fill_kettle()  # that is also function
@@ -14,3 +14,4 @@ def make_chai():  # that is also function
     serve("chai")
     
 make_chai()
+'''
