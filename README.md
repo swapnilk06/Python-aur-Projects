@@ -57,10 +57,10 @@ python testpython.py
 
 <br>
 
-#### 6] Get everything in Virtual Environment
+#### 6] Get everything in Virtual Environment (Traditional Way)
 
 - [x] Story behind Virtual Environment
-  - Its like \*\*safeguarding your application from other versions & don't clutter your operating system.
+  - Its like **safeguarding** your application from other versions & don't clutter your operating system.
   - Program actually moves safely in other environment as well on Linux, on Mac or other computer.
   - For every application create standalone Python Environment.
 
@@ -72,9 +72,21 @@ python testpython.py
 
 - **.venv** -> dot means hidden from regular files.
 
-> 2. Activate virtual environment
+> 2. Activate virtual environment (in git bash)
 
 ```bash
-	.venv\Scripts\activate
+	source .venv/Scripts/activate
 ```
 
+> 3. Install third party software or module
+- Create **requirements.txt**
+
+```bash
+pip install -r requirements.txt
+```
+
+- [x] New way of virtual env installation => `UV`
+
+<br>
+
+#### 7]
