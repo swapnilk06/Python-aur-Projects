@@ -85,5 +85,20 @@ print(f"After spice mix id: {id(spice_mix)}")
 
 <br>
 
+ 
+### 13] Numbers, Booleans and Operators in Depth in Python
 
-### 13] 
+#### Types of Numbers
+- Integers
+- Boolean
+- Real Number
+  - Floating -> decimal
+- Complex Number e.g. 2 + 3j
+
+
+- [x] Boolean Logical operation -> and, or, not
+- 1] tea or coffee -> "any one can be true"
+- 2] tea and coffee -> "both should be true"
+- 3] not -> opposite
+
+
