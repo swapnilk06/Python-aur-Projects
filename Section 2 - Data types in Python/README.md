@@ -102,3 +102,27 @@ print(f"After spice mix id: {id(spice_mix)}")
 - 3] not -> opposite
 
 
+------
+
+> [!IMPORTANT]
+### Coding Exercise
+- [x] Playing with Numbers
+Write a Python program that performs the following operations and prints the results
+  - Addition
+  - Subtraction
+  - Multiplication
+  - Division (float result)
+  - Floor Division (integer result)
+  - Modulus (remainder)
+```py
+a = 10 
+b = 5
+
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a//b) # Floor Division (integer result)
+print(a%b)  # Modulus (remainder)
+```
+
