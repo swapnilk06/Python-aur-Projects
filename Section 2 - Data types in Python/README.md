@@ -85,37 +85,38 @@ print(f"After spice mix id: {id(spice_mix)}")
 
 <br>
 
- 
 ### 13] Numbers, Booleans and Operators in Depth in Python
 
 #### Types of Numbers
+
 - Integers
 - Boolean
 - Real Number
   - Floating -> decimal
 - Complex Number e.g. 2 + 3j
 
-
 - [x] Boolean Logical operation -> and, or, not
 - 1] tea or coffee -> "any one can be true"
 - 2] tea and coffee -> "both should be true"
 - 3] not -> opposite
 
-
-------
+---
 
 > [!IMPORTANT]
+
 ### Coding Exercise
+
 - [x] Playing with Numbers
-Write a Python program that performs the following operations and prints the results
+      Write a Python program that performs the following operations and prints the results
   - Addition
   - Subtraction
   - Multiplication
   - Division (float result)
   - Floor Division (integer result)
   - Modulus (remainder)
+
 ```py
-a = 10 
+a = 10
 b = 5
 
 print(a+b)
@@ -126,3 +127,14 @@ print(a//b) # Floor Division (integer result)
 print(a%b)  # Modulus (remainder)
 ```
 
+<br>
+
+### 14] String - Index, Slice and Encoding
+
+- [x] Best time to learn the string is when build something, do some projects in it.
+
+#### String - core, indexing, slicing
+
+> [!NOTE]
+> - String is `Immutable` -> **They cannot be changed**
+> - In the memory always actually `create a new referenece`.
