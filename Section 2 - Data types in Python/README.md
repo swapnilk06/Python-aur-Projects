@@ -133,8 +133,51 @@ print(a%b)  # Modulus (remainder)
 
 - [x] Best time to learn the string is when build something, do some projects in it.
 
-#### String - core, indexing, slicing
+#### String - core, indexing, slicing, Encoding-Decoding
 
 > [!NOTE]
+>
 > - String is `Immutable` -> **They cannot be changed**
 > - In the memory always actually `create a new referenece`.
+
+#### How do we use the string?
+
+```py
+chai_type = "Ginger chai"
+customer_name = "Priya"
+
+print(f"Order for {customer_name} : {chai_type} please !")
+```
+
+- [x] `Indexing` => means each letter in this string is represented by a number. 
+
+#### Last number is not inclusive in the world of python
+- [x] Without including 'c' in => 0 to 7 indexing
+```py
+chai_description = "Aromatic and Bold" 
+
+print(f"First Word: {chai_description[0:7]}")
+```
+=> First word: Aromati
+
+- [x] We want to C as well
+```py
+chai_description = "Aromatic and Bold" 
+
+print(f"First Word: {chai_description[0:8]}")
+```
+=> First word: Aromatic
+
+---
+
+> [!IMPORTANT]
+
+### Coding Exercise
+
+- [x] Should You Go for a Walk?
+    You’re deciding whether to go for a walk based on two real-life conditions:
+    - is_sunny = True
+    - have_umbrella = False
+
+
+
