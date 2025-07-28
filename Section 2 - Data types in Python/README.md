@@ -204,9 +204,64 @@ print(is_sunny or have_umbrella)
 
 ```
 
-
 <br>
 
 ### 15] Tuples and Membership Testing
 
-#### 
+#### What are the Tuples?
+
+- Tuples --> `()` => `Parenthesis`
+- Tuples are `Immutable` => **They are can't be change**.
+- Python dosn't need third variable for swapping two
+  values.
+- Tuples are "Case Sensitive"
+  - cinnamon & Cinnamon -> are differents
+  ```py
+  print(f"Is ginger in masala spices: {'cinnamon' in masala_spices}")
+  print(f"Is ginger in masala spices: {'Cinnamon' in masala_spices}")
+  ```
+- `Membership testing or membership test` => You need to ask that what you are looking for in the tuple as availability.
+  -Whole thing depends on this keyword which is -> `in`
+
+> [!NOTE]
+>
+> - `()` => `Parenthesis`
+> - `[]` => `Brackets`
+> - `{}` => `Curly braces or Braces`
+
+---
+
+> [!IMPORTANT]
+
+### Coding Exercise
+
+- [x] Swapping Temperature
+
+  - You are building a temperature converter app. Sometimes, due to incorrect input order, the min_temp and max_temp values are swapped.
+
+  - Current values are
+
+    - min_temp = 40
+    - max_temp = 25
+
+  - Use Python tuples to swap them back to the correct order.
+
+```py
+min_temp = 40
+max_temp = 25
+
+min_temp, max_temp = max_temp, min_temp
+
+print(min_temp)
+print(max_temp)
+```
+
+=> 25
+40
+
+
+```
+
+<br>
+
+### 16] 
