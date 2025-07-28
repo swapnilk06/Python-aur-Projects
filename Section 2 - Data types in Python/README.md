@@ -149,23 +149,28 @@ customer_name = "Priya"
 print(f"Order for {customer_name} : {chai_type} please !")
 ```
 
-- [x] `Indexing` => means each letter in this string is represented by a number. 
+- [x] `Indexing` => means each letter in this string is represented by a number.
 
 #### Last number is not inclusive in the world of python
+
 - [x] Without including 'c' in => 0 to 7 indexing
+
 ```py
-chai_description = "Aromatic and Bold" 
+chai_description = "Aromatic and Bold"
 
 print(f"First Word: {chai_description[0:7]}")
 ```
+
 => First word: Aromati
 
 - [x] We want to C as well
+
 ```py
-chai_description = "Aromatic and Bold" 
+chai_description = "Aromatic and Bold"
 
 print(f"First Word: {chai_description[0:8]}")
 ```
+
 => First word: Aromatic
 
 ---
@@ -175,9 +180,33 @@ print(f"First Word: {chai_description[0:8]}")
 ### Coding Exercise
 
 - [x] Should You Go for a Walk?
-    You’re deciding whether to go for a walk based on two real-life conditions:
-    - is_sunny = True
-    - have_umbrella = False
+      You’re deciding whether to go for a walk based on two real-life conditions:
+
+  - is_sunny = True
+  - have_umbrella = False
+
+  Print the result of the following:
+
+  - Is it not sunny today?
+  - Do you not have an umbrella?
+  - Should you go for a walk if it’s sunny and you don’t need an umbrella?
+  - Should you go for a walk if it’s sunny or if you have an umbrella?
+
+```py
+
+is_sunny = True
+have_umbrella = False
+
+print(not is_sunny)
+print(not have_umbrella)
+print(is_sunny and not have_umbrella)
+print(is_sunny or have_umbrella)
+
+```
 
 
+<br>
 
+### 15] Tuples and Membership Testing
+
+#### 

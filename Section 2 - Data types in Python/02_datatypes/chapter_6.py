@@ -13,7 +13,7 @@ chai_description = "Aromatic and Bold"
 # Without include 'c' in => 0 to 7 indexing
 print(f"First word: {chai_description[0:7]}")
 
-print(f"Second word: {chai_description[0:8:1]}") # '1' means => every single character
+print(f"Second word: {chai_description[0:8:1]}") # '1' => means every single character
 # print(f"Second word: {chai_description[0:8:2]}") # '2' => means every second character
 
 # Pythonic way doing above
