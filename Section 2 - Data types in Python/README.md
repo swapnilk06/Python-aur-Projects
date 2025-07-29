@@ -246,6 +246,7 @@ print(is_sunny or have_umbrella)
 
   - Use Python tuples to swap them back to the correct order.
 
+
 ```py
 min_temp = 40
 max_temp = 25
@@ -260,8 +261,44 @@ print(max_temp)
 40
 
 
+<br>
+
+### 16] Basic of List in python
+
+> [!IMPORTANT]
+> - `Immutable` -> They cannot be changed -> `Once the memory reference is done`, that is means it cannot be changed.
+>   - It get a unique id, that unique ID never changes that.
+> - `Mutable` -> They can be changed 
+>   - There can be append method, insert method... just becz, they are mutable.
+
+
+#### Mutable DataType - **List**
+- [x] `List` _(In world of python it called only list)_
+  - In other programing language it called as `Array`.
+  - There is no difference between in **List & Array**
+
+#### Position in list
+
+```bash
+Chai: ['water', 'milk', 'ginger', 'cardamom']
 ```
+- 0th => water
+- 1st => milk
+- 2nd => ginger
+- 3rd => cardamom
+
+- [x] `appends` -> always adds it at the very end of list.
+- [x] `insert` -> provide what position you want to add.
+  - This position known as `index`
+
+#### Other methods in list mostly used
+
+- [x] `extend` -> always add the elements at the end.
+- [x] `pop` -> always remove the last element.
+- [x] `Reverse` -> each postion will be reversed.
+- [x] `Sort` -> each postion will be sorted.
+
 
 <br>
 
-### 16] 
+### 17] 
