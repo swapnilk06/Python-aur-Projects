@@ -246,7 +246,6 @@ print(is_sunny or have_umbrella)
 
   - Use Python tuples to swap them back to the correct order.
 
-
 ```py
 min_temp = 40
 max_temp = 25
@@ -260,19 +259,19 @@ print(max_temp)
 => 25
 40
 
-
 <br>
 
 ### 16] Basic of List in python
 
 > [!IMPORTANT]
+>
 > - `Immutable` -> They cannot be changed -> `Once the memory reference is done`, that is means it cannot be changed.
 >   - It get a unique id, that unique ID never changes that.
-> - `Mutable` -> They can be changed 
+> - `Mutable` -> They can be changed
 >   - There can be append method, insert method... just becz, they are mutable.
 
-
 #### Mutable DataType - **List**
+
 - [x] `List` _(In world of python it called only list)_
   - In other programing language it called as `Array`.
   - There is no difference between in **List & Array**
@@ -282,6 +281,7 @@ print(max_temp)
 ```bash
 Chai: ['water', 'milk', 'ginger', 'cardamom']
 ```
+
 - 0th => water
 - 1st => milk
 - 2nd => ginger
@@ -298,7 +298,53 @@ Chai: ['water', 'milk', 'ginger', 'cardamom']
 - [x] `Reverse` -> each postion will be reversed.
 - [x] `Sort` -> each postion will be sorted.
 
-
 <br>
 
-### 17] 
+### 17] Operator overloading and bytearray in python
+
+#### Operator Overloading
+
+- There are a lot of operators in the world of programming like `+`
+- `+` plus is an operator which can adds two things, which are **left and right** e.g. 2 + 3 => This is designed to add numbers.
+- But whenever this operator whatever it is, it's being used for `doing more than one task` that is called as **Operator Overloading**.
+
+#### Operator Overloading in list
+
+```py
+strong_brew = ["black tea"] * 3
+print(f"Strong brew: {strong_brew}")
+```
+
+#### Bytearray
+
+- I want juat one string "CINNAMON"
+- How we can do that? => `bytearray` => in this used method => `()` also tuples as well as for method
+
+```py
+# It used rarely but its exists
+raw_spice_data = bytearray(b"CINNAMON") # each element will be treated as array
+print(f"Bytes: {raw_spice_data}")
+```
+
+- [x] Advantages of this
+- You can actually perform **all these replace** and **all these things**.
+
+- Output not proper of bytearray
+
+```py
+raw_spice_data.replace(b"CINNA", b"CARD")
+print(f"Bytes: {raw_spice_data}") # Investigation study to fix
+```
+
+- Innvestigation study can fix this output
+
+```py
+raw_spice_data = raw_spice_data.replace(b"CINNA", b"CARD")
+print(f"Bytes: {raw_spice_data}")
+```
+
+---
+
+> [!IMPORTANT]
+
+### Coding Exercise
