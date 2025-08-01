@@ -476,3 +476,51 @@ print(f"Is 'cloves' in optional spices? {'cloves' in optional_spices}")
 > [!IMPORTANT]
 
 ### Coding Exercise
+
+Managing Store Inventory
+  You’re managing product categories for a retail store. Your task is to identify:
+  - Which products are available in which branches
+  - What products are common
+  - What products are missing in each branch
+  - And which products should not be altered using frozenset
+
+Tasks:
+1] Create a set branch_a_products with the items: "bread", "milk", "butter", "jam". Create another set branch_b_products with the items: "bread", "cheese", "butter", "ketchup". Print both sets.
+2] Find and print the union of both branches’ products.
+3] Find and print the intersection of both branches’ products.
+4] Find and print the products that are in branch_a_products but not in branch_b_products.
+5] Check whether "ketchup" is available in branch_a_products and print the result.
+6] Define a frozenset called essential_items with values: "milk", "bread", "ketchup". Print the frozenset.
+
+```py
+
+branch_a_products = {"bread", "milk", "butter", "jam"}
+branch_b_products = {"bread", "cheese", "butter", "ketchup"}
+
+print(branch_a_products) # {'milk', 'bread', 'jam', 'butter'}
+print(branch_b_products) # {'bread', 'cheese', 'ketchup', 'butter'}
+
+# union
+print(branch_a_products | branch_b_products) # {'milk', 'bread', 'jam', 'ketchup', 'butter', 'cheese'}
+
+# intersection
+print(branch_a_products & branch_b_products) # {'bread', 'butter'}
+
+# difference 
+print(branch_a_products - branch_b_products) # {'milk', 'jam'}
+
+# Membership test
+print('ketchup' in branch_a_products) # False
+
+# frozenset - Immutable - not be change
+essential_items = frozenset(["milk","bread","ketchup"])
+print(essential_items) # 
+frozenset({'milk', 'bread', 'ketchup'})
+
+```
+
+<br>
+
+### 19] 
+
+#### 
