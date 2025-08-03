@@ -470,7 +470,6 @@ print(f"Is 'cloves' in optional spices? {'cloves' in optional_spices}")
 > - `Set` by default is known for uniqueness only.
 > - Working wise of `Set` & `Frozenset` are exactly same.
 
-
 ---
 
 > [!IMPORTANT]
@@ -478,11 +477,12 @@ print(f"Is 'cloves' in optional spices? {'cloves' in optional_spices}")
 ### Coding Exercise
 
 Managing Store Inventory
-  You’re managing product categories for a retail store. Your task is to identify:
-  - Which products are available in which branches
-  - What products are common
-  - What products are missing in each branch
-  - And which products should not be altered using frozenset
+You’re managing product categories for a retail store. Your task is to identify:
+
+- Which products are available in which branches
+- What products are common
+- What products are missing in each branch
+- And which products should not be altered using frozenset
 
 Tasks:
 1] Create a set branch_a_products with the items: "bread", "milk", "butter", "jam". Create another set branch_b_products with the items: "bread", "cheese", "butter", "ketchup". Print both sets.
@@ -506,7 +506,7 @@ print(branch_a_products | branch_b_products) # {'milk', 'bread', 'jam', 'ketchup
 # intersection
 print(branch_a_products & branch_b_products) # {'bread', 'butter'}
 
-# difference 
+# difference
 print(branch_a_products - branch_b_products) # {'milk', 'jam'}
 
 # Membership test
@@ -514,13 +514,136 @@ print('ketchup' in branch_a_products) # False
 
 # frozenset - Immutable - not be change
 essential_items = frozenset(["milk","bread","ketchup"])
-print(essential_items) # 
+print(essential_items) #
 frozenset({'milk', 'bread', 'ketchup'})
 
 ```
 
 <br>
 
-### 19] 
+### 19] Dictionary in Python
 
-#### 
+#### Why does dictionary exist?
+
+- whole point of 'List' being existing
+
+```py
+["ginger", "lemon"]
+```
+
+- There is no way of pointing out of that, _where is Lemon?_
+- Address any of them, we have indexing system based on 0,1
+- ginger => 0, lemon => 1
+
+- Named based indexing, call it as something like name.
+- `Dictionary`-> It gives named argument
+  - Each data will be pointed through the name instead of _0_ & _1_.
+
+> [!IMPORTANT]
+>
+> - Always remember in the dictionary "order dosn't really matter".
+> - Reference the element by their name.
+
+#### Way of creating dictionary
+
+- [x] Use `dict`
+
+```py
+chai_order = dict(type="Masala Chai", size="Large", sugar=2)
+```
+
+- [x] Use `{}` => Most common way
+
+```py
+chai_recipe = {} # Common way of creating an Empty dictionary
+```
+
+- Add more data in dictonary with [""]
+- "del" => to delete any component inside a dictionary
+
+- [x] get a size
+- bad code -> Want to get not exist key
+- That crash whole system
+
+```py
+chai_size = chai_order["customer_note"]
+print(f"Chai size: {chai_size}")
+```
+
+- good code
+- good code with get - That way not crashing whole system
+- dosn't crash whenever value can't find it, I can provide the default value
+
+```py
+customer_note = chai_order.get("Medium", "No Note")
+print(f"Customer note is: {customer_note}")
+```
+
+---
+
+> [!IMPORTANT]
+
+### Coding Exercise
+
+Customer Profile Management
+You are building a customer profile manager for a CRM (Customer Relationship Management) system. You need to store and manipulate customer data using Python dictionaries.
+
+Tasks:
+1] Create a dictionary named customer with the following fields:
+ - "name": "John Doe"
+ - "age": 32
+ - "city": "New York"
+ - Print the dictionary.
+2] Add "email" and "phone" to the dictionary.
+Print the updated dictionary.
+3] Print the customer’s "name" and "city" values.
+4] Check whether the key "email" exists in the dictionary and print the result.
+5] Delete the "age" field from the dictionary.
+Print the updated dictionary.
+6] Print all dictionary keys, values, and items.
+7] Remove and print the last inserted key-value pair.
+8] Use .get() to access the key "membership" (which doesn’t exist).
+Print the result.
+9] Update the dictionary with a new field "address" set to "221B Baker Street".
+Print the final dictionary.
+
+```py
+# Step 1: Create a customer profile dictionary
+customer = {
+    "name": "John Doe",
+    "age": 32,
+    "city": "New York"
+}
+print(customer)
+ 
+# Step 2: Add email and phone number to the dictionary
+customer["email"] = "john.doe@example.com"
+customer["phone"] = "123-456-7890"
+print(customer)
+ 
+# Step 3: Access and print the customer's name and city
+print(customer["name"])
+print(customer["city"])
+ 
+# Step 4: Check if "email" exists in the dictionary
+print("email" in customer)
+ 
+# Step 5: Delete the "age" field
+del customer["age"]
+print(customer)
+ 
+# Step 6: Print all keys, values, and items
+print(customer.keys())
+print(customer.values())
+print(customer.items())
+ 
+# Step 7: Remove the last inserted item and print it
+print(customer.popitem())
+ 
+# Step 8: Use .get to safely access a non-existent field "membership"
+print(customer.get("membership"))
+ 
+# Step 9: Update the dictionary with a new address field
+customer.update({"address": "221B Baker Street"})
+print(customer)
+```
