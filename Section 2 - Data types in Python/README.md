@@ -590,22 +590,23 @@ You are building a customer profile manager for a CRM (Customer Relationship Man
 
 Tasks:
 1] Create a dictionary named customer with the following fields:
- - "name": "John Doe"
- - "age": 32
- - "city": "New York"
- - Print the dictionary.
-2] Add "email" and "phone" to the dictionary.
-Print the updated dictionary.
-3] Print the customer’s "name" and "city" values.
-4] Check whether the key "email" exists in the dictionary and print the result.
-5] Delete the "age" field from the dictionary.
-Print the updated dictionary.
-6] Print all dictionary keys, values, and items.
-7] Remove and print the last inserted key-value pair.
-8] Use .get() to access the key "membership" (which doesn’t exist).
-Print the result.
-9] Update the dictionary with a new field "address" set to "221B Baker Street".
-Print the final dictionary.
+
+- "name": "John Doe"
+- "age": 32
+- "city": "New York"
+- Print the dictionary.
+  2] Add "email" and "phone" to the dictionary.
+  Print the updated dictionary.
+  3] Print the customer’s "name" and "city" values.
+  4] Check whether the key "email" exists in the dictionary and print the result.
+  5] Delete the "age" field from the dictionary.
+  Print the updated dictionary.
+  6] Print all dictionary keys, values, and items.
+  7] Remove and print the last inserted key-value pair.
+  8] Use .get() to access the key "membership" (which doesn’t exist).
+  Print the result.
+  9] Update the dictionary with a new field "address" set to "221B Baker Street".
+  Print the final dictionary.
 
 ```py
 # Step 1: Create a customer profile dictionary
@@ -615,35 +616,53 @@ customer = {
     "city": "New York"
 }
 print(customer)
- 
+
 # Step 2: Add email and phone number to the dictionary
 customer["email"] = "john.doe@example.com"
 customer["phone"] = "123-456-7890"
 print(customer)
- 
+
 # Step 3: Access and print the customer's name and city
 print(customer["name"])
 print(customer["city"])
- 
+
 # Step 4: Check if "email" exists in the dictionary
 print("email" in customer)
- 
+
 # Step 5: Delete the "age" field
 del customer["age"]
 print(customer)
- 
+
 # Step 6: Print all keys, values, and items
 print(customer.keys())
 print(customer.values())
 print(customer.items())
- 
+
 # Step 7: Remove the last inserted item and print it
 print(customer.popitem())
- 
+
 # Step 8: Use .get to safely access a non-existent field "membership"
 print(customer.get("membership"))
- 
+
 # Step 9: Update the dictionary with a new address field
 customer.update({"address": "221B Baker Street"})
 print(customer)
 ```
+
+<br>
+
+### 20] Touch on Advance Data types like Collections
+
+#### What are advance data types are available in this?
+
+- date, time, calandar (you can manipulate that)
+
+- [x] Also a package which can works with :-
+- timedelta - "discuss some duration when order was fetched and order was delivered to the user".
+
+  - Delta means => difference between the two things.
+
+- [x] Some utilities that :-
+- arrow, dateutil
+
+---
