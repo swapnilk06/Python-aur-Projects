@@ -69,4 +69,17 @@ print("mango" in t)
 15] What list method can add multiple elements at once?
 => "extend" => extend() takes an iterable and appends all its elements to the list.
 
+16] What does list.pop() do by default?
+=> "Removes the last element" => Without an index, pop() removes and returns the last item in the list.
 
+17] Which list method removes a specific value?
+=> "remove" => remove() deletes rhe first occurrence of the specified value.
+
+18] How do you insert an item at a specific index in a list?
+=> "list.insert(index,item)" => insert() places the item at the given index without removing any elements.
+
+19] What does the reverse() method do?
+=> "Reverses the list in place" => reverse() modifies the original list by reverding in place.
+
+20] Which method sorts a list in ascending order by default?
+=> "sort()" => sort() the list in place in asccending order unless specified otherwise.
