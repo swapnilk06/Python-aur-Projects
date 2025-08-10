@@ -46,3 +46,77 @@ if total_purchase > 1000:
 if customer_age >= 60:
     print("Senior Citizen")
 ```
+
+<br>
+
+### 22] Building a Snack System
+
+#### Best way to learn how to build software
+
+- [x] A local cafe wants a program that suggests a snack. If a customer asks for cookies or samosa, it confirms the order. Otherwise, it says it's not available.
+
+- Task:
+  - Take snack input
+  - It it's `"cookies"` or `"samosa"`, confirm the order
+  - Else, show unavailability
+
+#### Code breaking
+
+- [x] Print user input
+
+```py
+snack = input("Enter your preferred snack:")
+
+print(f"user said: {snack}")
+```
+
+- [x] User all inputs are come into a string format as all are in same lowercase
+
+```py
+snack = input("Enter your preferred snack:").lower()
+
+print(f"user said: {snack}")
+```
+
+- [x] if, else
+
+```py
+snack = input("Enter your preferred snack:").lower()
+
+if snack == "cookies" or snack == "samosa":
+  print(f"Great Choice! We'll serve you {snack}")
+else:
+	print("Sorry, we only serve cookies or samsoa with tea")
+```
+
+---
+
+> [!IMPORTANT]
+
+### Coding Exercise
+
+- [x] Restaurant Billing System
+      You’re designing a billing system for a restaurant. Depending on the total bill amount entered by the customer, they might get a free dessert.
+
+- Tasks:
+  - 1. If the bill amount is greater than 500, return the string "You get a free dessert!"
+  - 2. Otherwise, return the string: "No free dessert this time."
+
+```py
+# This function will be tested automatically.
+# Do not change the function name or parameter.
+def get_delivery_offer(bill_amount: float) -> str:
+    # Write your code below this line
+    if bill_amount > 500:
+        return "You get a free dessert!"
+    else:
+        return "No free dessert this time."
+    pass
+
+```
+
+<br>
+
+### 23]
+
+####
